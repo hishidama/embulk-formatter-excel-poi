@@ -58,6 +58,7 @@ publishing {
             pom {
                 name = 'Excel formatter plugin for Embulk with Apache POI'
                 description = 'Parses Excel files(xls, xlsx) read by other file input plugins.'
+                url = 'https://github.com/hishidama/embulk-formatter-excel-poi'
                 licenses {
                     license {
                         name = 'MIT License'
