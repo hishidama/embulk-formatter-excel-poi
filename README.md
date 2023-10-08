@@ -52,23 +52,12 @@ If you'd like to process data and output Excel format, I think it's also one way
 
 ## Install
 
-1. download pom
+1. install plugin
    ```
-   $ curl https://repo1.maven.org/maven2/io/github/hishidama/embulk/embulk-formatter-excel-poi/0.2.0/embulk-formatter-excel-poi-0.2.0.pom > embulk-formatter-excel-poi-0.2.0.pom
-   ```
-
-2. install dependencies
-   ```
-   $ mvn install -f embulk-formatter-excel-poi-0.2.0.pom
+   $ mvn dependency:get -Dartifact=io.github.hishidama.embulk:embulk-formatter-excel-poi:0.2.0
    ```
 
-3. download and install jar
-   ```
-   $ export M2_REPO=$HOME/.m2/repository
-   $ curl https://repo1.maven.org/maven2/io/github/hishidama/embulk/embulk-formatter-excel-poi/0.2.0/embulk-formatter-excel-poi-0.2.0.jar > $M2_REPO/io/github/hishidama/embulk/embulk-formatter-excel-poi/0.2.0/embulk-formatter-excel-poi-0.2.0.jar
-   ```
-
-4. add setting to $HOME/.embulk/embulk.properties
+2. add setting to $HOME/.embulk/embulk.properties
    ```
    plugins.formatter.poi_excel=maven:io.github.hishidama.embulk:excel-poi:0.2.0
    ```
